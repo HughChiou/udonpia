@@ -14,4 +14,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN sudo -u node npm install -g <your-package-list-here>
-RUN sudo yarn global add @angular/cli @nrwl/cli nx
+RUN sudo yarn global add @angular/cli nx cypress
