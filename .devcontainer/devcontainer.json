@@ -28,8 +28,12 @@
 	"forwardPorts": [3000,4200],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "npx cypress install",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+	"containerEnv": {
+		"DISPLAY": "host.docker.internal:0.0",
+		"LIBGL_ALWAYS_INDIRECT": "0"
+	}
 }
